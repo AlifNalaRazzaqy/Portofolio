@@ -1,28 +1,29 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Alif Nala",
+  lastName: "Razzaqy",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Informatics Student",
+  avatar: "/images/AlifNalaRazzaqy.jpg",
+  email: "razzaqyalifnala@gmail.com",
+  location: "Asia/Jakarta",
+  languages: ["Bahasa Indonesia", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Let’s Learn & Build Together!</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I share my journey in tech, favorite tools, and coding experiments. No spam, just stories and
+      resources you might love.
     </>
   ),
 };
+
 
 const social = [
   // Links are automatically displayed.
@@ -30,22 +31,22 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/AlifNalaRazzaqy",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/alif-nala-razzaqy/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/alifnala_razzaqy/",
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:razzaqyalifnala@gmail.com`,
   },
 ];
 
@@ -55,19 +56,20 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Exploring the intersection of code, creativity, and user experience</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Latest project: <strong className="ml-4">SMART App</strong></>,
+    href: "/work/smart-activity-manager-app",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm a Computer Science student passionate about all things tech.
+      <br /> I enjoy diving into software engineering, UI/UX design, mobile development, and game development — always eager to learn and build something meaningful.
     </>
   ),
 };
+
 
 const about = {
   path: "/about",
@@ -81,18 +83,15 @@ const about = {
   avatar: {
     display: true,
   },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Alif Nala Razzaqy is a passionate Computer Science student based in {person.location}, with
+        a deep curiosity for all things tech. His interests include software engineering, UI/UX design,
+        mobile app development, and game development. He enjoys building meaningful digital experiences
+        and is always eager to learn, explore, and innovate at the intersection of technology and creativity.
       </>
     ),
   },
@@ -101,99 +100,151 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "SMART App – Kampus Project",
+        timeframe: "2025",
+        role: "UI/UX Designer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+             Designed and implemented a modern, responsive UI for the SMART App, improving user task
+             completion speed by 30%.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Created design components and layout systems using Jetpack Compose, optimized for productivity and
+            clarity.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/SmartApp.jpg",
             alt: "Once UI Project",
-            width: 16,
+            width: 19,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Music Recommender",
+        timeframe: "2025",
+        role: "AI System Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed a content-based filtering system using NLP to generate playlist recommendations based on user mood and genre.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Integrated Deezer API for audio previews and built a Streamlit-based UI, increasing engagement by 25%.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/project-01/deepmusicrecommender.jpg",
+            alt: "Once UI Project",
+            width: 19,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/DataVisualization.jpg",
+            alt: "Once UI Project",
+            width: 19,
+            height: 9,
+          },
+          
+        ],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
-    ],
-  },
+  display: true,
+  title: "Studies",
+  institutions: [
+    {
+      name: "Universitas Pembangunan Nasional Veteran Jakarta",
+      description: (
+        <>
+          Mahasiswa program studi <strong>Informatika</strong>. Aktif dalam berbagai organisasi, seperti:
+          <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+            <li>
+              Anggota kelas videografi di <strong>UFO "Veteran" Jakarta</strong> sejak Agustus 2024.
+            </li>
+            <li>
+              <strong>Staf Human Resources</strong> di organisasi <strong>Catur UPN Veteran Jakarta</strong>.
+            </li>
+            <li>
+              <strong>Videografer</strong> untuk <strong>ClimateHub Indonesia</strong>, berkontribusi dalam produksi dokumentasi dan konten kreatif.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+  ],
+},
+
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Employability",
+      description: (
+        <>
+          Mengikuti program <strong>21st Century Employability Skills Program - Advanced</strong> yang meningkatkan soft skill, komunikasi, dan kerja tim profesional.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "C Programming",
+      description: <>Menyelesaikan pelatihan <strong>Memulai Pemrograman dengan C</strong>.</>,
+      images: [],
+    },
+    {
+      title: "Cybersecurity",
+      description: (
+        <>
+          Telah mempelajari berbagai topik keamanan siber melalui program <strong>Cisco Ethical Hacker</strong> dan <strong>Introduction to Cybersecurity</strong>, mencakup:
+          <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+            <li>Cybersecurity tools</li>
+            <li>Internet Protocol Suite (TCP/IP)</li>
+            <li>Data privacy & computer networking</li>
+          </ul>
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "Human Resources",
+      description: (
+        <>
+          Berperan sebagai <strong>Staf HR</strong> di organisasi <strong>Catur UPN Veteran Jakarta</strong>,
+          bertanggung jawab dalam manajemen anggota dan koordinasi kegiatan.
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "Videography",
+      description: (
+        <>
+          Memiliki pengalaman videografi di berbagai organisasi:
+          <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+            <li>Anggota kelas videografi <strong>UFO "Veteran" Jakarta</strong></li>
+            <li>Videografer untuk <strong>ClimateHub Indonesia</strong></li>
+          </ul>
+        </>
+      ),
+      images: [],
+    },
+    {
+      title: "English Communication",
+      description: (
+        <>
+          Peningkatan keterampilan bahasa Inggris melalui program <strong>Employability Skills</strong>.
+        </>
+      ),
+      images: [],
+    },
+  ],
+},
 };
 
 const blog = {
@@ -223,42 +274,32 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/1.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/gallery/2.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/gallery/3.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/4.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/5.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/6.jpg",
       alt: "image",
       orientation: "vertical",
     },
